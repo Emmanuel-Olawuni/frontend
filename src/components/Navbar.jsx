@@ -34,11 +34,11 @@ const NavBar = () => {
         className="sm:hidden"
       />
       <NavbarBrand>
-        <p className="font-bold text-inherit">ACME</p>
+        <p className="font-bold text-primary">My Blog</p>
       </NavbarBrand>
     </NavbarContent>
 
-    <NavbarContent className="hidden sm:flex gap-4" justify="center">
+    <NavbarContent className="hidden text-gray-900 sm:flex gap-4" justify="center">
       <NavbarItem>
         <Link color="foreground" href="#">
           Features
@@ -57,7 +57,7 @@ const NavBar = () => {
     </NavbarContent>
     <NavbarContent justify="end">
       <NavbarItem className="hidden lg:flex">
-        <Link href="/login">Login</Link>
+        <Link href="/register">Login</Link>
       </NavbarItem>
       <NavbarItem>
         <Button as={Link} color="primary" href="/login" variant="flat">
